@@ -1,14 +1,17 @@
 class StaticPagesController < ApplicationController
-
   def home
-    render html: "Hello World, I'm Guy!"
+    render html: "Fuck you"
   end
 
-  def contact
-    render html: "Contact page"
+  def about
+    render html: "About page"
   end
 
   def projects
     render html: "Projects page"
+  end
+
+  def contact
+    render html: "Contact page"
   end
 end
