@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    render html: "Fuck you"
   end
 
   def about
