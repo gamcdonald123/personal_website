@@ -13,4 +13,8 @@ class StaticPagesController < ApplicationController
   def contact
     render html: "Contact page"
   end
+
+  def resume
+    render html: "Resume page"
+  end
 end

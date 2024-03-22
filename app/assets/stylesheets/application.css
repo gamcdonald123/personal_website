@@ -1,4 +1,8 @@
-.navbar {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .navbar {
   background-color: #f8f8f8;
   border-bottom: 1px solid #e7e7e7;
   border-radius: 0;
@@ -6,7 +10,80 @@
   min-height: 50px;
   padding: 0;
   /* center buttons */
-  text-align: center;
+  /* text-align: center; */
   /* center vertically the buttons */
-  line-height: 50px;
+  /* line-height: 50px; */
+/* } */
+
+body {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0033ff76;
+  color: #333;
+}
+
+#menu {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.zen-kaku gothic antique-regular {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu-item {
+  color: rgb(234, 207, 98);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-family: "Ibarra Real Nova", serif;
+
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: color 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+#menu-items {
+  margin-left: clamp(4rem, 20vw, 48rem);
+  margin-top: clamp(2rem, 15vw, 32rem);
+  z-index: 2;
+  transition: opacity 500ms ease;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+  color: rgb(172, 0, 178);
+}
+
+
+#menu-background-pattern {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: radial-gradient(
+    rgba(2255, 255, 255, 0.1) 20%,
+    transparent 20%
+    );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+  transition: opacity 500ms ease,
+  background-size 500ms ease;
+  }
+
+#menu-items:hover ~ #menu-background-pattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
 }

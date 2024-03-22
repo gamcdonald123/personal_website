@@ -8,8 +8,12 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Roboto:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
   </head>
 
+  <%# <body style="background-color: grey;"> %>
   <body>
     <%# render navbar partial %>
     <%= yield %>
