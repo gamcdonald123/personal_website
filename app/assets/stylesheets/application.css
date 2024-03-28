@@ -1,12 +1,26 @@
-.navbar {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #e7e7e7;
-  border-radius: 0;
-  margin-bottom: 0;
-  min-height: 50px;
-  padding: 0;
-  /* center buttons */
-  text-align: center;
-  /* center vertically the buttons */
-  line-height: 50px;
+body, button, input, select, textarea {
+  font-family: 'Lora', serif;
+  background-color: rgb(249, 239, 226);
+}
+
+
+#menu-items {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+  
+
+.menu-item {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.menu-item:hover {
+  color: blue;
 }
