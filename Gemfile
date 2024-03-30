@@ -63,7 +63,7 @@ group :development do
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 
-  gem "rails_live_reload"
+  gem "rails_live_reload"emme
 end
 
 group :test do
