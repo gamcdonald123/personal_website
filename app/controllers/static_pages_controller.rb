@@ -1,20 +1,18 @@
 class StaticPagesController < ApplicationController
   def home
+    @currentTime = Time.now
+    @formatted_currentTime = @currentTime.strftime("%H:%M %d/%m/%Y")
   end
 
   def about
-    render html: "About page"
   end
 
   def projects
-    render html: "Projects page"
   end
 
   def contact
-    render html: "Contact page"
   end
 
   def resume
-    render html: "Resume page"
   end
 end
